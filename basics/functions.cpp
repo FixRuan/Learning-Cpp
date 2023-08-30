@@ -1,17 +1,17 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
-void sayHello() {
-  cout << "Hello World" << endl;
-}
+// f(x) = x² - 3x + 5
 
-int sum(int a, int b) {
-  return a + b;
+float fx(float x) {
+  return ((pow(x, 2) - (3 * x)) + 5);
 }
 
 int main() {
-  sayHello();
-  cout << sum(10, 10);
+
+  cout << fx(2);
+
   return 0;
 }
